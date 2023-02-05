@@ -1,3 +1,29 @@
-body {
-  background-color: aquamarine;
+
+/*
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+*/
+
+:root {
+  --dark-cyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+  --dark-blue: hsl(212, 21%, 14%);
+  --gray-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  box-sizing: border-box;
+  font-size: 14px;
+  background-color: var(--cream);
+}
+
+h1 {
+  font-family: 'Fraunces', serif;
+  font-size: 32px;
 }
