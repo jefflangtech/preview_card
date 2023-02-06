@@ -20,10 +20,40 @@ The designs were created to the following widths:
 * {
   box-sizing: border-box;
   font-size: 14px;
+}
+
+body {
   background-color: var(--cream);
 }
 
-h1 {
-  font-family: 'Fraunces', serif;
-  font-size: 32px;
+main {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+div {
+  /* border: 1px solid red; */
+}
+
+.widget {
+  position: absolute;
+  width: 600px;
+  height: 450px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 3%;
+  overflow: hidden;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: row;
+}
+
+.hero img {
+  max-width: 300px;
+}
+
+.product-content {
+  /* width: 50%; */
 }
