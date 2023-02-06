@@ -32,10 +32,6 @@ main {
   width: 100vw;
 }
 
-div {
-  /* border: 1px solid red; */
-}
-
 .widget {
   position: absolute;
   width: 600px;
@@ -43,17 +39,83 @@ div {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border-radius: 3%;
+  border-radius: 8px;
   overflow: hidden;
   background-color: var(--white);
   display: flex;
   flex-direction: row;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.hero img {
+.upper {
+  text-transform: uppercase;
+}
+
+.product-image img {
   max-width: 300px;
 }
 
 .product-content {
-  /* width: 50%; */
+  padding: 32px;
+}
+
+.product-category {
+  color: var(--gray-blue);
+  font-size: 12px;
+  letter-spacing: 5px;
+  margin-bottom: 20px;
+}
+
+.product-name {
+  font-family: 'Fraunces', serif;
+  font-size: 32px;
+  color: var(--dark-blue);
+  margin-bottom: 24px;
+}
+
+.product-description {
+  color: var(--gray-blue);
+  line-height: 23px;
+  margin-bottom: 29px;
+}
+
+.price {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 19px;
+  margin-bottom: 30px;
+}
+
+.current-price {
+  font-family: 'Fraunces', serif;
+  color: var(--dark-cyan);
+  font-size: 32px;
+}
+
+.was-price {
+  color: var(--gray-blue);
+  text-decoration: line-through;
+}
+
+.buy {
+  padding-block: 15px;
+  font-weight: 700;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.button {
+  text-align: center;
+  color: var(--white);
+  background-color: var(--dark-cyan);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.button:hover {
+  --dark-cyan: hsl(158, 42%, 18%);
 }
