@@ -1,6 +1,7 @@
 # Frontend Mentor - Product preview card component solution
+A solution provided by jefflangtech for the [Product preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa).
 
-This is a solution to the [Product preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+I've been away from any sort of writing or coding for a while, and I wanted to take a baby-step back in to see where I'm at. I really enjoyed knocking this out because it, frankly, was pretty enjoyable just to put all the pieces together, and I realized I was able to pick things back up again pretty quickly.
 
 ## Table of contents
 
@@ -16,20 +17,15 @@ This is a solution to the [Product preview card component challenge on Frontend 
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
 
-Users should be able to:
-
-- View the optimal layout depending on their device's screen size
-- See hover and focus states for interactive elements
+This is a pretty standard product card with 2 sizes, one for desktop and one for mobile. Users will be able to see a different size and layout based on the screen size, as well as a basic interactive button.
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./resources/images/Product-Preview-Card-Front-End-Mentor-Project.png)
 
 Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
 
