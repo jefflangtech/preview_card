@@ -13,7 +13,7 @@ I've been away from any sort of writing or coding for a while, and I wanted to t
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Useful resources](#useful-resources)
-- [Author](#author)
+- [About Me](#author)
 
 ## Overview
 
@@ -28,8 +28,8 @@ This is a pretty standard product card with 2 sizes, one for desktop and one for
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/html-and-css-product-preview-card-dXFSWjlgrr)
-- Live Site URL: [Add live site URL here](https://jefflangtech.github.io/preview_card/)
+- Solution URL: [Front End Mentor Solution](https://www.frontendmentor.io/solutions/html-and-css-product-preview-card-dXFSWjlgrr)
+- Live Site URL: [Github Sites](https://jefflangtech.github.io/preview_card/)
 
 ## My process
 
