@@ -1,3 +1,14 @@
+/* 
+Created by Jeff Lang Tech - A Front End Mentor Challenge
+
+CSS consists of the following sections:
+  || General
+  || Primary Content
+  || Media Queries
+  || Interactive
+*/
+
+/* || General */
 :root {
   --dark-cyan: hsl(158, 36%, 37%);
   --cream: hsl(30, 38%, 92%);
@@ -8,6 +19,9 @@
 
 * {
   box-sizing: border-box;
+}
+
+html {
   font-size: 14px;
 }
 
@@ -21,14 +35,19 @@ main {
   width: 100vw;
 }
 
-.widget {
+.upper {
+  text-transform: uppercase;
+}
+
+/* || Primary Content */
+.card {
   position: absolute;
   width: 600px;
   height: 450px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border-radius: 8px;
+  border-radius: 0.5rem;
   overflow: hidden;
   background-color: var(--white);
   display: flex;
@@ -36,54 +55,50 @@ main {
   font-family: 'Montserrat', sans-serif;
 }
 
-.upper {
-  text-transform: uppercase;
-}
-
 .product-image {
   background-image: url("../images/image-product-desktop.jpg");
   background-size: contain;
-  width: 50%;
+  min-width: 50%;
   height: 100%;
 }
 
 .product-content {
   max-width: 50%;
-  padding: 32px;
+  padding: 2.3rem;
 }
 
 .product-category {
   color: var(--gray-blue);
-  font-size: 12px;
-  letter-spacing: 5px;
-  margin-bottom: 20px;
+  font-size: 0.85em;
+  letter-spacing: 0.4rem;
+  margin-bottom: 1.45rem;
 }
 
 .product-name {
   font-family: 'Fraunces', serif;
-  font-size: 32px;
+  font-size: 2.3rem;
   color: var(--dark-blue);
-  margin-bottom: 24px;
+  margin-bottom: 1.7rem;
 }
 
 .product-description {
   color: var(--gray-blue);
-  line-height: 23px;
-  margin-bottom: 29px;
+  line-height: 1.7rem;
+  margin-bottom: 2rem;
 }
 
 .price {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 19px;
-  margin-bottom: 30px;
+  gap: 1.35rem;
+  margin-bottom: 2.15rem;
 }
 
 .current-price {
   font-family: 'Fraunces', serif;
   color: var(--dark-cyan);
-  font-size: 32px;
+  font-size: 2.3rem;
 }
 
 .was-price {
@@ -92,29 +107,26 @@ main {
 }
 
 .buy {
-  padding-block: 15px;
+  padding-block: 1.15rem;
   font-weight: 700;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 12px;
+  gap: 0.85rem;
 }
 
 .button {
   text-align: center;
   color: var(--white);
   background-color: var(--dark-cyan);
-  border-radius: 8px;
+  border-radius: 0.5rem;
   cursor: pointer;
 }
 
-.button:hover {
-  --dark-cyan: hsl(158, 42%, 18%);
-}
-
+/* || Media Queries */
 @media (max-width: 620px) {
-  .widget {
+  .card {
     flex-direction: column;
     width: 343px;
     height: 611px;
@@ -122,23 +134,28 @@ main {
   .product-image {
     background-image: url("../images/image-product-mobile.jpg");
     background-size: cover;
-    width: 343px;
+    min-width: 100%;
     min-height: 240px;
   }
   .product-content {
     max-width: 100%;
-    padding: 24px;
+    padding: 1.7rem;
   }
   .product-category {
-    margin-bottom: 12px;
+    margin-bottom: 0.85rem;
   }
   .product-name {
-    margin-bottom: 16px;
+    margin-bottom: 1.2rem;
   }
   .product-description {
-    margin-bottom: 24px;
+    margin-bottom: 1.7rem;
   }
   .price {
-    margin-bottom: 20px;
+    margin-bottom: 1.43rem;
   }
+}
+
+/* || Interactive */
+.button:hover {
+  --dark-cyan: hsl(158, 42%, 18%);
 }
