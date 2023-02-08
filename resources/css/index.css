@@ -1,14 +1,3 @@
-
-/*
-## Layout
-
-The designs were created to the following widths:
-
-- Mobile: 375px
-- Desktop: 1440px
-
-*/
-
 :root {
   --dark-cyan: hsl(158, 36%, 37%);
   --cream: hsl(30, 38%, 92%);
@@ -51,11 +40,15 @@ main {
   text-transform: uppercase;
 }
 
-.product-image img {
-  max-width: 300px;
+.product-image {
+  background-image: url("../images/image-product-desktop.jpg");
+  background-size: contain;
+  width: 50%;
+  height: 100%;
 }
 
 .product-content {
+  max-width: 50%;
   padding: 32px;
 }
 
@@ -118,4 +111,34 @@ main {
 
 .button:hover {
   --dark-cyan: hsl(158, 42%, 18%);
+}
+
+@media (max-width: 620px) {
+  .widget {
+    flex-direction: column;
+    width: 343px;
+    height: 611px;
+  }
+  .product-image {
+    background-image: url("../images/image-product-mobile.jpg");
+    background-size: cover;
+    width: 343px;
+    min-height: 240px;
+  }
+  .product-content {
+    max-width: 100%;
+    padding: 24px;
+  }
+  .product-category {
+    margin-bottom: 12px;
+  }
+  .product-name {
+    margin-bottom: 16px;
+  }
+  .product-description {
+    margin-bottom: 24px;
+  }
+  .price {
+    margin-bottom: 20px;
+  }
 }
